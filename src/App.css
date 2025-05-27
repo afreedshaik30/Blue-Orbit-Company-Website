@@ -1093,9 +1093,9 @@ textarea {
     margin: 0;
   }
 
-  .block {
+  /* .block {
     padding: 40px 0 10px;
-  }
+  } */
 
   .hero-block .carousel-caption {
     display: none;
@@ -1119,6 +1119,7 @@ textarea {
 
   .services-block {
     padding: 40px 0 25px;
+    /* margin-top: 40px; */
   }
 
   .services-block .row {
