@@ -4,17 +4,17 @@ var heroData = [
   {
     id: 1,
     image: "src/assets/images/img-hero3.jpg",
-    title: "Crafting Code, Designing Dreams",
+    title: "Innovate Beyond Boundaries",
     description:
-      "Transforming ideas into scalable solutions, our team engineers experiences that empower your business to thrive in the digital age.",
+      "We break the mold of traditional development, offering cutting-edge technology and bespoke strategies to future-proof your business.",
     link: "https://www.google.com",
   },
   {
     id: 2,
     image: "src/assets/images/img-hero2.jpg",
-    title: "Innovate Beyond Boundaries",
+    title: "Crafting Code, Designing Dreams",
     description:
-      "We break the mold of traditional development, offering cutting-edge technology and bespoke strategies to future-proof your business.",
+      "Transforming ideas into scalable solutions, our team engineers experiences that empower your business to thrive in the digital age.",
     link: "https://www.facebook.com",
   },
   {
