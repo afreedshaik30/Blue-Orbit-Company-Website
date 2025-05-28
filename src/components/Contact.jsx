@@ -1,3 +1,5 @@
+import React, { useState } from "react"; // step-1
+
 import Container from "react-bootstrap/Container";
 
 // Form -> Layout -> Form Grid
@@ -8,6 +10,63 @@ import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 
 const Contact = () => {
+  // step -2
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+  // step - 3
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  // step - 5 :  To validate the fields before submitting.
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    let newErrors = {};
+    if (!formData.name.trim()) newErrors.name = "Name is required";
+    if (!formData.email.trim()) newErrors.email = "Email is required";
+    if (!formData.phone.trim()) newErrors.phone = "Phone is required";
+    if (!formData.message.trim()) newErrors.message = "Message is required";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
+  // step - 6 :  Handle Form Submission
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!validate()) return;
+
+    // Format the message for WhatsApp
+    const whatsappMessage = `Hello! New Contact Request:
+                               👤 Name: ${formData.name}
+                               📧 Email: ${formData.email}
+                               📞 Phone: ${formData.phone}
+                               📝 Message: ${formData.message}`.trim();
+
+    // Send to WhatsApp using WhatsApp API Link
+    const phoneNumber = "919014782986";
+    const whatsappURL = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+
+    setSubmitted(true);
+    setFormData({ name: "", email: "", phone: "", message: "" });
+    setErrors({});
+  };
+
   return (
     <section id="contact" className="block contact-block">
       <Container fluid>
@@ -18,38 +77,66 @@ const Contact = () => {
           </h2>
         </div>
 
-        <Form className="contact-form">
-          <Row className="g-5">
+        <Form className="contact-form" onSubmit={handleSubmit}>
+          {" "}
+          {/*#5*/}
+          <Row className="g-3">
             <Col sm={4}>
               <Form.Control
                 type="text"
-                placeholder="Enter your Full name : "
-                required
+                name="name"
+                value={formData.name} // #4
+                placeholder="Enter your Full name :"
+                onChange={handleChange} // #4
+                isInvalid={!!errors.name} // #5
               />
+              <Form.Control.Feedback type="invalid">
+                {" "}
+                {/*#5*/}
+                {errors.name}
+              </Form.Control.Feedback>
             </Col>
             <Col sm={4}>
               <Form.Control
                 type="email"
-                placeholder="Enter your Email : "
-                required
+                name="email"
+                value={formData.email}
+                placeholder="Enter your Email :"
+                onChange={handleChange}
+                isInvalid={!!errors.email}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.email}
+              </Form.Control.Feedback>
             </Col>
             <Col sm={4}>
               <Form.Control
                 type="tel"
-                placeholder="Enter your Phone number : "
-                required
+                name="phone"
+                value={formData.phone}
+                placeholder="Enter your Phone number :"
+                onChange={handleChange}
+                isInvalid={!!errors.phone}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.phone}
+              </Form.Control.Feedback>
             </Col>
             <Col sm={12}>
               <Form.Control
                 as="textarea"
+                name="message"
+                value={formData.message}
                 placeholder="Leave your message here :"
-                required
+                onChange={handleChange}
+                isInvalid={!!errors.message}
               />
+              <Form.Control.Feedback type="invalid">
+                {errors.message}
+              </Form.Control.Feedback>
             </Col>
           </Row>
-          <div className="btn-holder">
+          <div className="btn-holder mt-4">
             <Button type="submit">Send Message</Button>
           </div>
         </Form>
