@@ -120,19 +120,21 @@ let itemsPerPage = 6; // step-2 : item per single page
 const WorkSection = () => {
   // step - 3 : useState and Pagination Logic
   const [activePage, setActivePage] = useState(1); // For current active page
-  const totalPages = Math.ceil(worksData.length / itemsPerPage); // To calculate total number of pages based on data 15/6=3 pages
+
+  const totalPages = Math.ceil(worksData.length / itemsPerPage); // To calculate total number of pages based on data (15/6 = 3 pages)
 
   // Function to handle page change
   const handlePageChange = (pageNumber) => {
     setActivePage(pageNumber);
   };
 
-  // Get index of first and last item for current page
-  const indexOfLastItem = activePage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  // Get index of first and last item for current page - 0 based index(0-14)
+  const indexOfLastItem = activePage * itemsPerPage; // 1 * 6 = 6, 2 * 6  = 12, 3 * 6 = 18
+  
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage; // 6 - 6 = 0, 12 - 6 = 6,  18 - 6 = 12
 
   // Slice the data array to show only current page's items
-  const currentItems = worksData.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = worksData.slice(indexOfFirstItem, indexOfLastItem); //.slice(0,6)=0-5, .slice(6,12)=6-11, .slice(12,18)=12-14 cause No 15,16,17 index
 
   return (
     <section id="works" className="block works-block">
@@ -182,7 +184,13 @@ const WorkSection = () => {
               </Pagination.Item>
             )
           )}
-
+          {/*
+              Array.from({object of totalPages as length}, (_, idx) => idx+1 for 1-Based index) is a static method to create a shallow-copied arr from an iterable arr/obj.
+                   Creates an array with totalPages elements.
+                   Each element is its 1-based index (page number). 
+              
+              Array.from().map((pageNumber) => <Pagination.Item></Pagination.Item)     
+              */}
           {/* <Pagination.Next
             onClick={() => handlePageChange(activePage + 1)}
             disabled={activePage === totalPages}
