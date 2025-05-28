@@ -471,7 +471,7 @@ textarea {
 }
 
 #footer .socials a:hover {
-  background: #f53333;
+  background: #08519c;
 }
 
 .block {
@@ -718,7 +718,7 @@ textarea {
   transition: all 0.3s linear;
   -webkit-transition: all 0.2s linear;
   vertical-align: middle;
-  background: rgba(246, 75, 75, 0.9);
+  background: rgba(4, 49, 94, 0.7); /* 0.5 for 50% opacity */
   opacity: 0;
 }
 
@@ -728,7 +728,7 @@ textarea {
 
 .teams-block .designation {
   display: block;
-  font-style: italic;
+  /* font-style: italic; */
   margin: 0 0 20px;
 }
 
