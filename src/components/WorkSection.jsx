@@ -130,7 +130,7 @@ const WorkSection = () => {
 
   // Get index of first and last item for current page - 0 based index(0-14)
   const indexOfLastItem = activePage * itemsPerPage; // 1 * 6 = 6, 2 * 6  = 12, 3 * 6 = 18
-  
+
   const indexOfFirstItem = indexOfLastItem - itemsPerPage; // 6 - 6 = 0, 12 - 6 = 6,  18 - 6 = 12
 
   // Slice the data array to show only current page's items
@@ -152,7 +152,7 @@ const WorkSection = () => {
                   <a href={data.link}>
                     <Image src={data.image} alt={data.title + ".jpg"} />
                     <div className="label text-center">
-                      <h3>{data.title}</h3>
+                      <h3 style={{ color: "yellow" }}>{data.title}</h3>
                       <p>{data.subtitle}</p>
                     </div>
                   </a>
