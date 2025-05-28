@@ -11,33 +11,48 @@ const teamsData = [
     gmailLink: "mailto:ceo@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Gabriel Hart",
-    designation: "CEO",
+    designation: "Chief Executive Officer",
   },
   {
     id: 2,
     image: "src/assets/images/team3.jpg",
     gmailLink: "mailto:manager@gmail.com",
     linkedinLink: "https://www.linkedin.com",
-    name: "Taylor Lopez",
-    designation: "Manager",
+    name: "Olivia Brooks",
+    designation: "Operations Manager",
   },
   {
     id: 3,
-    image: "src/assets/images/team8.jpg",
-    gmailLink: "mailto:developer@gmail.com",
-    linkedinLink: "https://www.linkedin.com",
-    name: "David Smith",
-    designation: "Developer",
-  },
-  {
-    id: 4,
     image: "src/assets/images/team6.jpg",
     gmailLink: "mailto:uiux@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Sarah Wills",
     designation: "UI/UX Designer",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facilis, totam maiores.",
+  },
+
+  {
+    id: 4,
+    image: "src/assets/images/team8.jpg",
+    gmailLink: "mailto:developer@gmail.com",
+    linkedinLink: "https://www.linkedin.com",
+    name: "David Smith",
+    designation: "Full Stack Developer",
+  },
+  {
+    id: 5,
+    image: "src/assets/images/team4.jpg",
+    gmailLink: "mailto:developer@gmail.com",
+    linkedinLink: "https://www.linkedin.com",
+    name: "Ethan Lewis",
+    designation: "Backend Developer",
+  },
+  {
+    id: 6,
+    image: "src/assets/images/team7.jpg",
+    gmailLink: "mailto:developer@gmail.com",
+    linkedinLink: "https://www.linkedin.com",
+    name: "Sophia Pitt",
+    designation: "Frontend Developer",
   },
 ];
 
@@ -52,7 +67,7 @@ const Teams = () => {
         <Row>
           {teamsData.map((data) => {
             return (
-              <Col sm={3} key={data.id}>
+              <Col sm={2} key={data.id}>
                 <div className="image">
                   <Image src={data.image} />
                   <div className="overlay">

@@ -722,14 +722,17 @@ textarea {
   opacity: 0;
 }
 
+.teams-block .content {
+  text-align: center;
+}
 .teams-block h3 {
   margin: 0 0 5px;
 }
 
-.teams-block .designation {
+.teams-block span {
   display: block;
-  /* font-style: italic; */
-  margin: 0 0 20px;
+  font-size: small;
+  color: #08519c;
 }
 
 .testimonials-block {
