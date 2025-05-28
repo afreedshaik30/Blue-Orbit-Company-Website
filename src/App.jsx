@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/HeroHome";
 import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
+import WorkSection from "./components/WorkSection";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Hero />
         <AboutSection />
         <ServicesSection />
+        <WorkSection />
       </main>
     </div>
   );
