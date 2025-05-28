@@ -27,7 +27,7 @@ const blogData = [
   {
     id: 3,
     image: "src/assets/images/blog3.jpg",
-    time: "30 Oct 2025",
+    time: "30 Sep 2025",
     title: "Cybersecurity Tips for Developers",
     description:
       "Learn essential cybersecurity practices every developer must follow to keep applications and user data safe in 2025.",
