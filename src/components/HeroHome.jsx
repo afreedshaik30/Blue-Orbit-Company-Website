@@ -29,7 +29,7 @@ var heroData = [
 
 const HeroHome = () => {
   return (
-    <section id="home" className="hero-block w-100 p-0">
+    <section id="home" className="hero-block w-100">
       <Carousel>
         {heroData.map((data) => {
           return (

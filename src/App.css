@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  /* scroll-padding-top: 100px; */
 }
 
 *,
@@ -243,7 +244,7 @@ textarea {
   color: #08519c;
   text-align: center;
   font-size: 20px;
-  margin: 70px 0 50px;
+  margin: 35px 0 15px;
   /* top r/l bottom */
 }
 
@@ -251,7 +252,7 @@ textarea {
   margin: 0 0 5px;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .title-holder .subtitle {
@@ -383,7 +384,7 @@ textarea {
 }
 
 #header {
-  padding: 15px 0;
+  padding: 25px 0;
   position: fixed;
   left: 0;
   right: 0;
@@ -535,6 +536,23 @@ textarea {
 .hero-block .carousel-control-prev:hover,
 .hero-block .carousel-control-next:hover {
   opacity: 1;
+}
+
+#home {
+  position: relative;
+  padding-top: 0px;
+  margin-top: 100px;
+}
+
+#home {
+  padding-top: 100px;
+  margin-top: 0;
+}
+
+#about {
+  position: relative;
+  padding-top: 100px; /* space for fixed header */
+  margin-top: -10px; /* pulls the section up to compensate */
 }
 
 .about-block .progress-block {
@@ -1071,7 +1089,7 @@ textarea {
   }
 
   .title-holder {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
   }
 
   .go-top {
