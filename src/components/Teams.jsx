@@ -7,7 +7,7 @@ import Image from "react-bootstrap/Image";
 const teamsData = [
   {
     id: 1,
-    image: "src/assets/images/team2.jpg",
+    image: "src/assets/images/team1.jpg",
     gmailLink: "mailto:ceo@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Gabriel Hart",
@@ -15,7 +15,7 @@ const teamsData = [
   },
   {
     id: 2,
-    image: "src/assets/images/team3.jpg",
+    image: "src/assets/images/team2.jpg",
     gmailLink: "mailto:manager@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Olivia Brooks",
@@ -23,16 +23,15 @@ const teamsData = [
   },
   {
     id: 3,
-    image: "src/assets/images/team6.jpg",
+    image: "src/assets/images/team3.jpg",
     gmailLink: "mailto:uiux@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Sarah Wills",
     designation: "UI/UX Designer",
   },
-
   {
     id: 4,
-    image: "src/assets/images/team8.jpg",
+    image: "src/assets/images/team4.jpg",
     gmailLink: "mailto:developer@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "David Smith",
@@ -40,19 +39,35 @@ const teamsData = [
   },
   {
     id: 5,
-    image: "src/assets/images/team4.jpg",
-    gmailLink: "mailto:developer@gmail.com",
+    image: "src/assets/images/team5.jpg",
+    gmailLink: "mailto:backend@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Ethan Lewis",
     designation: "Backend Developer",
   },
   {
     id: 6,
-    image: "src/assets/images/team7.jpg",
-    gmailLink: "mailto:developer@gmail.com",
+    image: "src/assets/images/team6.jpg",
+    gmailLink: "mailto:frontend@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Sophia Pitt",
     designation: "Frontend Developer",
+  },
+  {
+    id: 7,
+    image: "src/assets/images/team7.jpg",
+    gmailLink: "mailto:contentwriter@gmail.com",
+    linkedinLink: "https://www.linkedin.com",
+    name: "Ryan Giggs",
+    designation: "Cloud and DevOps Engineer",
+  },
+  {
+    id: 8,
+    image: "src/assets/images/team8.jpg",
+    gmailLink: "mailto:seoexpert@gmail.com",
+    linkedinLink: "https://www.linkedin.com",
+    name: "Taylor Lopez",
+    designation: "SEO Expert",
   },
 ];
 
@@ -67,7 +82,7 @@ const Teams = () => {
         <Row>
           {teamsData.map((data) => {
             return (
-              <Col sm={2} key={data.id}>
+              <Col sm={3} key={data.id}>
                 <div className="image">
                   <Image src={data.image} />
                   <div className="overlay">
