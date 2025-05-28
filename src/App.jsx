@@ -7,6 +7,7 @@ import AboutSection from "./components/AboutSection";
 import ServicesSection from "./components/ServicesSection";
 import WorkSection from "./components/WorkSection";
 import Teams from "./components/Teams";
+import Testimonials from "./components/Testimonials";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <ServicesSection />
         <WorkSection />
         <Teams />
+        <Testimonials />
       </main>
     </div>
   );

@@ -38,15 +38,15 @@ const AboutSection = () => {
               that are not only functional but also meaningful.
             </p>
             <div className="progress-block">
-              <h4>Web-based Applictions</h4>
+              <h4 style={{ color: "#08519c" }}>Web-based Applictions</h4>
               <ProgressBar now={webApp} label={`${webApp}%`} />
             </div>
             <div className="progress-block">
-              <h4>Mobile Applications</h4>
+              <h4 style={{ color: "#08519c" }}>Mobile Applications</h4>
               <ProgressBar now={mobileApp} label={`${mobileApp}%`} />
             </div>
             <div className="progress-block">
-              <h4>UI/UX Design</h4>
+              <h4 style={{ color: "#08519c" }}>UI/UX Design</h4>
               <ProgressBar now={uiuxDesign} label={`${uiuxDesign}%`} />
             </div>
           </Col>
