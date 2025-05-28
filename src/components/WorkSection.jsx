@@ -147,7 +147,7 @@ const WorkSection = () => {
           {/* step - 4 : Replace .map() in <Row> with currentItems.map() */}
           {currentItems.map((data) => {
             return (
-              <Col sm={4}>
+              <Col sm={4} key={data.id}>
                 <div className="portfolio-wrapper">
                   <a href={data.link}>
                     <Image src={data.image} alt={data.title + ".jpg"} />

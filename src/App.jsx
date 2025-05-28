@@ -13,28 +13,14 @@ import Contact from "./components/Contact";
 
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
-
+import Footer from "./components/Footer";
+import GoTop from "./components/GoTop";
 const App = () => {
   return (
-    // <div className="App">
-    //   {/* 1.header */}
-    //   <header id="header">
-    //     <Header />
-    //   </header>
-    //   {/* 2. main */}
-    //   <main>
-    //     <Hero />
-    //     <AboutSection />
-    //     <ServicesSection />
-    //     <WorkSection />
-    //     <Teams />
-    //     <Testimonials />
-    //     <Blog />
-    //     <Contact />
-    //   </main>
-    // </div>
     <div className="App">
-      <Header />
+      <header>
+        <Header />
+      </header>
       <Routes>
         {/* Home page: All sections */}
         <Route path="/" element={<HomePage />} />
@@ -47,8 +33,30 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <footer>
+        <Footer />
+      </footer>
+      <GoTop />
     </div>
   );
 };
 
 export default App;
+
+// <div className="App">
+//   {/* 1.header */}
+//   <header id="header">
+//     <Header />
+//   </header>
+//   {/* 2. main */}
+//   <main>
+//     <Hero />
+//     <AboutSection />
+//     <ServicesSection />
+//     <WorkSection />
+//     <Teams />
+//     <Testimonials />
+//     <Blog />
+//     <Contact />
+//   </main>
+// </div>

@@ -7,19 +7,22 @@ import TeamsSection from "./Teams";
 import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 import Contact from "./Contact";
+import GoTop from "./GoTop";
 
 const Home = () => {
   return (
-    <main>
-      <Hero />
-      <AboutSection />
-      <ServicesSection />
-      <WorkSection />
-      <TeamsSection />
-      <Testimonials />
-      <Blog />
-      <Contact />
-    </main>
+    <>
+      <main>
+        <Hero />
+        <AboutSection />
+        <ServicesSection />
+        <WorkSection />
+        <TeamsSection />
+        <Testimonials />
+        <Blog />
+        <Contact />
+      </main>
+    </>
   );
 };
 
