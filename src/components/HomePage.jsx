@@ -1,23 +1,21 @@
-// Home.js
-import Hero from "./HeroHome";
-import AboutSection from "./AboutSection";
-import ServicesSection from "./ServicesSection";
-import WorkSection from "./WorkSection";
-import TeamsSection from "./Teams";
+import HeroBanner from "./HeroBanner";
+import About from "./About";
+import Services from "./Services";
+import Works from "./Works";
+import Teams from "./Teams";
 import Testimonials from "./Testimonials";
 import Blog from "./Blog";
 import Contact from "./Contact";
-import GoTop from "./GoTop";
 
 const Home = () => {
   return (
     <>
       <main>
-        <Hero />
-        <AboutSection />
-        <ServicesSection />
-        <WorkSection />
-        <TeamsSection />
+        <HeroBanner />
+        <About />
+        <Services />
+        <Works />
+        <Teams />
         <Testimonials />
         <Blog />
         <Contact />

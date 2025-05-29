@@ -8,16 +8,16 @@ import Button from "react-bootstrap/Button";
 const blogData = [
   {
     id: 1,
-    image: "src/assets/images/blog5.jpg",
+    image: "src/assets/images/blogImg/blog1.jpeg",
     time: "28 Dec 2025",
-    title: "The Rise of Quantum Computing",
+    title: "The Power of AI and Machine Learning",
     description:
-      "Explore how quantum computing is redefining problem-solving in technology and what it means for the future of AI and cryptography.",
+      "Dive into how Artificial Intelligence and Machine Learning are transforming industries, revolutionizing automation, and shaping the future of innovation.",
     link: "https://www.techcrunch.com",
   },
   {
     id: 2,
-    image: "src/assets/images/blog2.jpg",
+    image: "src/assets/images/blogImg/blog2.jpeg",
     time: "29 Nov 2025",
     title: "Building Scalable APIs with Node.js",
     description:
@@ -26,7 +26,7 @@ const blogData = [
   },
   {
     id: 3,
-    image: "src/assets/images/blog3.jpg",
+    image: "src/assets/images/blogImg/blog3.jpeg",
     time: "30 Sep 2025",
     title: "Cybersecurity Tips for Developers",
     description:

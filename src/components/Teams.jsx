@@ -7,23 +7,23 @@ import Image from "react-bootstrap/Image";
 const teamsData = [
   {
     id: 1,
-    image: "src/assets/images/team1.jpg",
-    gmailLink: "mailto:ceo@gmail.com",
+    image: "src/assets/images/teamImg/team1.jpg",
+    gmailLink: "mailto:founderandchairman@gmail.com",
     linkedinLink: "https://www.linkedin.com",
-    name: "Gabriel Hart",
-    designation: "Chief Executive Officer",
+    name: "Tony Stark",
+    designation: "Founder & Chairman",
   },
   {
     id: 2,
-    image: "src/assets/images/team2.jpg",
-    gmailLink: "mailto:manager@gmail.com",
+    image: "src/assets/images/teamImg/team2.jpg",
+    gmailLink: "mailto:ceo@gmail.com",
     linkedinLink: "https://www.linkedin.com",
-    name: "Olivia Brooks",
-    designation: "Operations Manager",
+    name: "Pepper Potts",
+    designation: "CEO",
   },
   {
     id: 3,
-    image: "src/assets/images/team3.jpg",
+    image: "src/assets/images/teamImg/team3.jpg",
     gmailLink: "mailto:uiux@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Sarah Wills",
@@ -31,7 +31,7 @@ const teamsData = [
   },
   {
     id: 4,
-    image: "src/assets/images/team4.jpg",
+    image: "src/assets/images/teamImg/team4.jpg",
     gmailLink: "mailto:developer@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "David Smith",
@@ -39,7 +39,7 @@ const teamsData = [
   },
   {
     id: 5,
-    image: "src/assets/images/team5.jpg",
+    image: "src/assets/images/teamImg/team5.jpg",
     gmailLink: "mailto:backend@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Ethan Lewis",
@@ -47,7 +47,7 @@ const teamsData = [
   },
   {
     id: 6,
-    image: "src/assets/images/team6.jpg",
+    image: "src/assets/images/teamImg/team6.jpg",
     gmailLink: "mailto:frontend@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Sophia Pitt",
@@ -55,7 +55,7 @@ const teamsData = [
   },
   {
     id: 7,
-    image: "src/assets/images/team7.jpg",
+    image: "src/assets/images/teamImg/team7.jpg",
     gmailLink: "mailto:contentwriter@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Ryan Giggs",
@@ -63,7 +63,7 @@ const teamsData = [
   },
   {
     id: 8,
-    image: "src/assets/images/team8.jpg",
+    image: "src/assets/images/teamImg/team8.jpg",
     gmailLink: "mailto:seoexpert@gmail.com",
     linkedinLink: "https://www.linkedin.com",
     name: "Taylor Lopez",

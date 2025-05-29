@@ -1,8 +1,11 @@
 html {
   box-sizing: border-box;
   /* scroll-padding-top: 100px; */
+  scroll-padding-top: 70px; /* adjust this to your header height */
 }
-
+section {
+  scroll-margin-top: 70px; /* modern alternative */
+}
 *,
 *:before,
 *:after {
@@ -395,7 +398,7 @@ textarea {
 }
 
 #header {
-  padding: 25px 0;
+  padding: 12px 0;
   position: fixed;
   left: 0;
   right: 0;
@@ -566,6 +569,15 @@ textarea {
   margin-top: -10px; /* pulls the section up to compensate */
 }
 
+#teams,
+#services,
+#works,
+#teams,
+#blog,
+#contact {
+  margin: 30px;
+}
+
 .about-block .progress-block {
   margin: 0 0 25px;
 }
@@ -577,9 +589,24 @@ textarea {
 }
 
 .about-block .progress-bar {
-  background-color: #08519c;
+  background-color: navy;
   -webkit-transition: width 0.3s linear;
   transition: width 0.3s linear;
+}
+
+.image-hover {
+  width: 550px;
+  height: 426px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border: 1px solid navy; /* Darker, cleaner border */
+}
+
+.image-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25); /* Deeper shadow on hover */
 }
 
 .services-block .icon {
@@ -932,7 +959,7 @@ textarea {
 .contact-block .contact-form {
   margin: 0 0 60px;
   border-radius: 15px;
-  padding-bottom: 20px;
+  padding: 20px 60px 20px;
   font-family: monospace;
 
   color: #0d0d0d; /* Text color */

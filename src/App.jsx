@@ -2,12 +2,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Header from "./components/Header";
-import HeroHome from "./components/HeroHome";
-import AboutSection from "./components/AboutSection";
-import ServicesSection from "./components/ServicesSection";
-import WorkSection from "./components/WorkSection";
-import TeamsSection from "./components/Teams";
-import Testimonials from "./components/Testimonials";
+
+import About from "./components/About";
+import Services from "./components/Services";
+import Works from "./components/Works";
+import Teams from "./components/Teams";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 
@@ -15,9 +14,12 @@ import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
+import ScrollToTop from "./components/ScrollToTop";
+
 const App = () => {
   return (
     <div className="App">
+      <ScrollToTop />
       <header>
         <Header />
       </header>
@@ -26,10 +28,10 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
 
         {/* Individual pages */}
-        <Route path="/about" element={<AboutSection />} />
-        <Route path="/services" element={<ServicesSection />} />
-        <Route path="/works" element={<WorkSection />} />
-        <Route path="/teams" element={<TeamsSection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/teams" element={<Teams />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
