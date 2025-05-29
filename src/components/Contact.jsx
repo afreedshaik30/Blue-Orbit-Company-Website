@@ -48,11 +48,13 @@ const Contact = () => {
     if (!validate()) return;
 
     // Format the message for WhatsApp
-    const whatsappMessage = `Hello! New Contact Request:
-                               👤 Name: ${formData.name}
-                               📧 Email: ${formData.email}
-                               📞 Phone: ${formData.phone}
-                               📝 Message: ${formData.message}`.trim();
+    const whatsappMessage = `
+Hello! New Contact Request:
+👤 Name: ${formData.name}
+📧 Email: ${formData.email}
+📞 Phone: ${formData.phone}
+📝 Message: ${formData.message}
+`.trim();
 
     // Send to WhatsApp using WhatsApp API Link
     const phoneNumber = "919014782986";

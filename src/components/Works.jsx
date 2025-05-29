@@ -1,4 +1,4 @@
-import React, { useState } from "react"; //step-1
+import React, { useState, useRef } from "react"; //step-1
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -84,9 +84,13 @@ const WorkSection = () => {
 
   const totalPages = Math.ceil(worksData.length / itemsPerPage); // To calculate total number of pages based on data (15/6 = 3 pages)
 
-  // Function to handle page change
+  // Function to handle page change and scroll to top
   const handlePageChange = (pageNumber) => {
     setActivePage(pageNumber);
+
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   };
 
   // Get index of first and last item for current page - 0 based index(0-14)
@@ -97,8 +101,10 @@ const WorkSection = () => {
   // Slice the data array to show only current page's items
   const currentItems = worksData.slice(indexOfFirstItem, indexOfLastItem); //.slice(0,6)=0-5, .slice(6,12)=6-11, .slice(12,18)=12-14 cause No 15,16,17 index
 
+  const sectionRef = useRef(null);
+
   return (
-    <section id="works" className="block works-block">
+    <section id="works" className="block works-block" ref={sectionRef}>
       <Container fluid>
         <div className="title-holder">
           <h2>Our Works</h2>

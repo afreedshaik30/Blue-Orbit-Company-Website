@@ -15,8 +15,13 @@ const Header = () => {
     <section id="header">
       <Navbar bg="light" expand="lg" expanded={expanded}>
         <Container>
-          <Navbar.Brand as={Link} to="/" onClick={closeNavbar}>
+          {/* <Navbar.Brand as={Link} to="/" onClick={closeNavbar}>
             Blue Orbit
+          </Navbar.Brand> */}
+          <Navbar.Brand>
+            <Link to="/" className="navbar-brand-link" onClick={closeNavbar}>
+              Blue Orbit
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             aria-controls="basic-navbar-nav"

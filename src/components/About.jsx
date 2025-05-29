@@ -35,10 +35,7 @@ const About = () => {
                 style={{ color: "navy", fontSize: "11px" }}
               ></i>
               &nbsp; At Blue Origin, We are a team of passionate developers and
-              dedicated to building
-              <span style={{ display: "inline-block", marginLeft: "18px" }}>
-                exceptional software solutions.
-              </span>
+              dedicated to building exceptional software solutions.
             </p>
 
             <p>
@@ -50,10 +47,7 @@ const About = () => {
                 }}
               ></i>
               &nbsp; By combining cutting-edge technology with industry
-              insights, we help you stay ahead
-              <span style={{ display: "inline-block", marginLeft: "18px" }}>
-                in a fast-paced digital world.
-              </span>
+              insights, we help you stay ahead in a fast-paced digital world.
             </p>
 
             <p>
@@ -62,10 +56,7 @@ const About = () => {
                 style={{ color: "navy", fontSize: "11px" }}
               ></i>
               &nbsp; Let’s build the future together, creating solutions that
-              are not only functional but also
-              <span style={{ display: "inline-block", marginLeft: "20px" }}>
-                meaningful.
-              </span>
+              are not only functional but also meaningful.
             </p>
 
             <div className="progress-block">
