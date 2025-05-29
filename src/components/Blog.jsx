@@ -5,10 +5,14 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 
+import blog1 from "../assets/images/blogImg/blog1.jpeg";
+import blog2 from "../assets/images/blogImg/blog2.jpeg";
+import blog3 from "../assets/images/blogImg/blog3.jpeg";
+
 const blogData = [
   {
     id: 1,
-    image: "src/assets/images/blogImg/blog1.jpeg",
+    image: blog1,
     time: "28 Dec 2025",
     title: "The Power of AI and Machine Learning",
     description:
@@ -17,7 +21,7 @@ const blogData = [
   },
   {
     id: 2,
-    image: "src/assets/images/blogImg/blog2.jpeg",
+    image: blog2,
     time: "29 Nov 2025",
     title: "Building Scalable APIs with Node.js",
     description:
@@ -26,7 +30,7 @@ const blogData = [
   },
   {
     id: 3,
-    image: "src/assets/images/blogImg/blog3.jpeg",
+    image: blog3,
     time: "30 Sep 2025",
     title: "Cybersecurity Tips for Developers",
     description:

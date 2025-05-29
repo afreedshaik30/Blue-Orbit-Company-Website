@@ -7,126 +7,70 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Pagination from "react-bootstrap/Pagination";
 
+import work1 from "../assets/images/workImg/work1.jpeg";
+import work2 from "../assets/images/workImg/work2.jpeg";
+import work3 from "../assets/images/workImg/work3.jpeg";
+import work4 from "../assets/images/workImg/work4.jpeg";
+import work5 from "../assets/images/workImg/work5.jpeg";
+import work6 from "../assets/images/workImg/work6.jpeg";
+import work7 from "../assets/images/workImg/work7.jpeg";
+import work8 from "../assets/images/workImg/work8.jpeg";
+import work9 from "../assets/images/workImg/work9.jpeg";
+import work10 from "../assets/images/workImg/work10.jpeg";
+import work11 from "../assets/images/workImg/work11.jpeg";
+import work12 from "../assets/images/workImg/work12.jpeg";
+import work13 from "../assets/images/workImg/work13.jpeg";
+import work14 from "../assets/images/workImg/work14.jpeg";
+import work15 from "../assets/images/workImg/work15.jpeg";
+
 const worksData = [
-  // Frontend
-  {
-    id: 1,
-    // link: "https://www.example.com/project13",
-    image: "src/assets/images/workImg/work1.jpeg",
-    title: "Progressive Web App",
-    subtitle: "Frontend",
-  },
+  { id: 1, image: work1, title: "Progressive Web App", subtitle: "Frontend" },
   {
     id: 2,
-    // link: "https://www.example.com/project1",
-    image: "src/assets/images/workImg/work2.jpeg",
+    image: work2,
     title: "Responsive Frontend Design",
     subtitle: "Frontend",
   },
-
-  // Backend
-  {
-    id: 3,
-    // link: "https://www.example.com/project14",
-    image: "src/assets/images/workImg/work3.jpeg",
-    title: "Microservices Backend",
-    subtitle: "Backend",
-  },
+  { id: 3, image: work3, title: "Microservices Backend", subtitle: "Backend" },
   {
     id: 4,
-    // link: "https://www.example.com/project2",
-    image: "src/assets/images/workImg/work4.jpeg",
+    image: work4,
     title: "Scalable Web App Backend",
     subtitle: "Backend",
   },
-
-  // UI/UX
-  {
-    id: 5,
-    // link: "https://www.example.com/project2",
-    image: "src/assets/images/workImg/work5.jpeg",
-    title: "Creative UI/UX Design",
-    subtitle: "UI/UX",
-  },
-  {
-    id: 6,
-    // link: "https://www.example.com/project9",
-    image: "src/assets/images/workImg/work6.jpeg",
-    title: "Mobile App UI",
-    subtitle: "UI/UX",
-  },
-
-  // Android
+  { id: 5, image: work5, title: "Creative UI/UX Design", subtitle: "UI/UX" },
+  { id: 6, image: work6, title: "Mobile App UI", subtitle: "UI/UX" },
   {
     id: 7,
-    // link: "https://www.example.com/project15",
-    image: "src/assets/images/workImg/work7.jpeg",
+    image: work7,
     title: "Mobile App with Firebase",
     subtitle: "Android",
   },
-  {
-    id: 8,
-    // link: "https://www.example.com/project6",
-    image: "src/assets/images/workImg/work8.jpeg",
-    title: "Native Android App",
-    subtitle: "Android",
-  },
-
-  // Web Development
+  { id: 8, image: work8, title: "Native Android App", subtitle: "Android" },
   {
     id: 9,
-    // link: "https://www.example.com/project4",
-    image: "src/assets/images/workImg/work9.jpeg",
+    image: work9,
     title: "Full-Stack Web App",
     subtitle: "Web Development",
   },
   {
     id: 10,
-    // link: "https://www.example.com/project6",
-    image: "src/assets/images/workImg/work10.jpeg",
+    image: work10,
     title: "eCommerce Website",
     subtitle: "Web Development",
   },
-
-  // Cloud
   {
     id: 11,
-    // link: "https://www.example.com/project5",
-    image: "src/assets/images/workImg/work11.jpeg",
+    image: work11,
     title: "Cloud-Powered Platform",
     subtitle: "Cloud Integration",
   },
-  {
-    id: 12,
-    // link: "https://www.example.com/project5",
-    image: "src/assets/images/workImg/work12.jpeg",
-    title: "Cloud-Integration",
-    subtitle: "Cloud",
-  },
-
-  // DevOps
-  {
-    id: 13,
-    // link: "https://www.example.com/project3",
-    image: "src/assets/images/workImg/work13.jpeg",
-    title: "CI/CD Pipeline Setup",
-    subtitle: "DevOps",
-  },
-
-  // SEO
-  {
-    id: 14,
-    // link: "https://www.example.com/project4",
-    image: "src/assets/images/workImg/work14.jpeg",
-    title: "SEO Optimization",
-    subtitle: "SEO",
-  },
-
-  // Mobile Design
+  { id: 12, image: work12, title: "Cloud-Integration", subtitle: "Cloud" },
+  { id: 13, image: work13, title: "CI/CD Pipeline Setup", subtitle: "DevOps" },
+  { id: 14, image: work14, title: "SEO Optimization", subtitle: "SEO" },
   {
     id: 15,
-    // link: "https://www.example.com/project1",
-    image: "src/assets/images/workImg/work15.jpeg",
+    image: work15,
     title: "Mobile-Friendly Website",
     subtitle: "Mobile Design",
   },

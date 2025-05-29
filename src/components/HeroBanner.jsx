@@ -1,9 +1,13 @@
 import Carousel from "react-bootstrap/Carousel";
 
-var heroData = [
+import heroImg1 from "../assets/images/bannerImg/img-hero3.jpg";
+import heroImg2 from "../assets/images/bannerImg/img-hero2.jpg";
+import heroImg3 from "../assets/images/bannerImg/img-hero1.jpg";
+
+const heroData = [
   {
     id: 1,
-    image: "src/assets/images/bannerImg/img-hero3.jpg",
+    image: heroImg3, // use imported variable
     title: "Innovate Beyond Boundaries",
     description:
       "We break the mold of traditional development, offering cutting-edge technology and bespoke strategies to future-proof your business.",
@@ -11,7 +15,7 @@ var heroData = [
   },
   {
     id: 2,
-    image: "src/assets/images/bannerImg/img-hero2.jpg",
+    image: heroImg2,
     title: "Crafting Code, Designing Dreams",
     description:
       "Transforming ideas into scalable solutions, our team engineers experiences that empower your business to thrive in the digital age.",
@@ -19,7 +23,7 @@ var heroData = [
   },
   {
     id: 3,
-    image: "src/assets/images/bannerImg/img-hero1.jpg",
+    image: heroImg1,
     title: "Empowering Growth Through Technology",
     description:
       "Our expertise bridges the gap between ideas and innovation, delivering custom software that scales with your ambitions.",
