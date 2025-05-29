@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 
 const Footer = () => {
   return (
-    <section id="footer">
+    <section id="footer" style={{ margin: "75px 0 0" }}>
       <Container fluid>
         <div className="copyright">
           &copy; 2025 Blue Orbit,&nbsp;All Right Reserved.
